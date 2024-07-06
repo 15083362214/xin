@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<style>
+			body{
+				background-color: #C7DDEF;
+			}
+			h3{
+				background-color: gainsboro;
+			}
+			.mianleft img{
+				width: 100%;
+			}
+			.list{
+				border-top: skyblue 5px solid;
+				margin-top: 20px;
+			}
+			.mainleft,.mainright{
+				background-color: aliceblue;
+			}
+			.mainleft{
+				border-right: #C7DDEF 8px solid ;
+			}
+			footer{
+				border: 1px solid gainsboro;
+				 background-color: gainsboro;
+				 height: 60px;
+				 margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container">
+			<div class="row">
+				<h3>小格的博客</h3>
+			</div>
+		</header>
+		<nav class="container">
+			<div class="row">
+				<ul class="list-unstyled list-inline">
+					<li>首页</li>
+					<li>博客列表</li>
+					<li>案例</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<main class="container">
+			<div class="mainleft col-md-3 hidden-sm hidden-xs">
+				<h5>个人资料</h5>
+				<img src="img/touxiang.jpg" >
+				<p>姓名：<small>小韩</small></p>
+				<p>性别：<small>男</small></p>
+				<p>年龄：<small>19</small></p>
+				<p>专业：<small>计算机应用</small></p>
+				<p>爱好：<small>电脑，唱歌，跳舞</small></p>
+				<div class="list">
+					<h5>博客列表</h5>
+					<ul class="list-unstyled">
+						<li><a>JQurey中的动画如何使用</a></li>
+						<li><a>JQurey中的动画如何使用</a></li>
+						<li><a>JQurey中的动画如何使用</a></li>
+						<li><a>JQurey中的动画如何使用</a></li>
+						<li><a>JQurey中的动画如何使用</a></li>
+					</ul>
+				</div>
+				<div class="list">
+					<h5>案例</h5>
+					<ul class="list-unstyled">
+						<li><a>使用Bootstrapt实现响应式布局</a></li>
+						<li><a>使用Bootstrapt实现响应式布局</a></li>
+						<li><a>使用Bootstrapt实现响应式布局</a></li>
+						<li><a>使用Bootstrapt实现响应式布局</a></li>
+						<li><a>使用Bootstrapt实现响应式布局</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mainright col-md-9">
+				<div class="row">
+					<h5>正文</h5>
+					<h4>javaScript基础学习<small>javaScript中的键盘事件</small></h4>
+					<p class="text-muted">-2023年11月8号</p>
+					<p>标签：&nbsp;&nbsp;&nbsp;前端   &nbsp;&nbsp;&nbsp; javaScript    &nbsp;&nbsp;&nbsp; 代码</p>
+					<div class="text-center">
+						<img src="img/Steven.jpg" >
+					</div>
+					<blockquote class="text-right">
+						<p>佛教中有一句话：初学者的心态；拥有初学者的心态是件了不起的事情。</p>
+						<small>出自<cite title="乔布斯">乔布斯</cite></small>
+					</blockquote>
+					<p>&nbsp;&nbsp;&nbsp;在网页开发中，经常要捕捉键盘的事件，例如按下<kbd>Enter</kbd>完成表单提交，按下<kbd>Backspaccce</kbd>关闭项目，按下
+					<kbd>Esc</kbd>关闭项目，使用<br>javaScript中的键盘监控事件就可以完成这种功能，语法如下：</p>
+					<code>document.onkeydown=function keydown(){}</code>
+					<p>&nbsp;&nbsp;&nbsp;以下是通过监控Enter键，提交表单的示例：</p>
+					<pre class="pre-scrollable">
+						function transitionEnd() {
+						  var el = document.createElement('bootstrap')
+						
+						  var transEndEventNames = {
+						    WebkitTransition : 'webkitTransitionEnd',
+						    MozTransition    : 'transitionend',
+						    OTransition      : 'oTransitionEnd otransitionend',
+						    transition       : 'transitionend'
+						  }
+						
+						  for (var name in transEndEventNames) {
+						    if (el.style[name] !== undefined) {
+						      return { end: transEndEventNames[name] }
+						    }
+						  }
+						
+						  return false // explicit for ie8 (  ._.)
+						}
+						
+						// https://blog.alexmaccaw.com/css-transitions
+						$.fn.emulateTransitionEnd = function (duration) {
+						  var called = false
+						  var $el = this
+						  $(this).one('bsTransitionEnd', function () { called = true })
+						  var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
+						  setTimeout(callback, duration)
+						  return this
+						}
+					</pre>
+					<p>keydown事件和键位码的解释如下所示：</p>
+					<p><strong>keydown事件</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当访客用鼠标选中了某个节点，按下键盘即会触发事件</p>
+					<p><strong>键盘键位码</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用十进制给键盘上每个键进行了编号，例如回车的键位码是13，空格的键位码是32</p>
+				</div>
+			</div>
+		</main>
+		<footer class="container">
+			<div class="row">
+				<p class="text-center"><strong>联系方式</strong></p>
+				<address class="text-center">
+							 
+							 地址：武汉市**区**号区
+							 电话：1234567890
+							 QQ：10000
+				</address>
+			</div>
+		</footer>
+	</body>
+</html>

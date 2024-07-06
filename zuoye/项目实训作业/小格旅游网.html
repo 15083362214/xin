@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css"/>
+		<style>
+			img{
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			
+			.list{position: relative;}
+			.list>span{
+				position: absolute;
+				color: #fff;
+				background-color: rgba(41, 114, 147, 0.8);
+				padding: 2% 3%;
+				border-radius: 5px;
+			}
+			.list>span:nth-child(2){
+				left: 0%;
+				bottom: 5%;
+				background: #aaffff;
+				width: 100%;
+				border-radius: 0%;
+			}
+		</style>
+	</head>
+	<body>
+		
+			
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="img/1.jpg" alt="...">
+		      <div class="carousel-caption">
+		        <h3>清晨！</h3>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/3.jpg" alt="...">
+		      <div class="carousel-caption">
+		        <h3>中午！</h3>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/7.jpg" alt="...">
+		      <div class="carousel-caption">
+		        <h3>夜晚！</h3>
+		      </div>
+		    </div>
+			
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+		
+		
+		<!-- Nav tabs -->
+		<div class="container">
+		<ul class="nav nav-tabs" role="tablist">
+		  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="glyphicon glyphicon-warning-sign">行程简介</a></li>
+		  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="glyphicon glyphicon-picture">景点图集</a></li>
+		  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" class="glyphicon glyphicon-info-sign">预定须知</a></li>
+		  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" class="glyphicon glyphicon-user">用户评价(0)</a></li>
+					
+					<li class="dropdown">
+								  <a id="dLabel" class="dropdown-toggle" data-toggle="dropdown">
+								    下拉菜单
+								    <span class="caret"></span>
+								  </a>
+								  <ul class="dropdown-menu" aria-labelledby="dLabel">
+								    <li><a href="#tab-1" data-toggle="tab">第一个下拉菜单</a></li>
+									<li><a href="#tab-2" data-toggle="tab">第二个下拉菜单</a></li>
+								  </ul>
+								</div>
+					</li>
+					
+					
+					
+					
+		<div class="tab-content">
+		  <div role="tabpanel" class="tab-pane active" id="home">
+						<div class="text-center">
+						<h4>昆明一日游</h4>
+						<p></p><a>第一天： 昆明接机签订合同，入住酒店。自由活动</a></p>
+						<p><a>第二天：石林风景区---石屏风--石林胜景--石林外景--莲花池--阿诗玛化身</a></p>
+						<p><a>第三天：洱海--VIP私人游艇----敞篷吉普车游洱海</a></p>
+						<p><a>第四天：拉市海--丽江古城--四方街--丽水金沙表演</a></p>
+						<p><a>第五天：束河古镇--玉龙雪山---蓝月谷 动车返回昆明</a></p>
+						</div>
+			</div>
+			
+		  <div role="tabpanel" class="tab-pane" id="profile">
+			  <div class="container">
+			  	<div class="row">
+			  		<div class="col-md-4">
+			  			<div class="list">
+			  			<img src="images/portfolio-1.jpg"/>
+						<span class="text-center">山</span>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="col-md-4">
+			  			<div class="list">
+			  			<img src="images/portfolio-2.jpg"/>
+						<span class="text-center">水</span>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="col-md-4">
+			  			<div class="list">
+			  			<img src="images/portfolio-3.jpg"/>
+						<span class="text-center">天</span>
+			  			</div>
+			  		</div>
+					</div>
+					</div>
+		  </div>
+		  
+		  <div role="tabpanel" class="tab-pane" id="messages">
+			  <div>
+				  <p><h4>预定须知</h4></p>
+			  <p>1.我司将在出行前3天向您发送《出团通知书》或导游的确认电话。</p>
+			  <p>2.请在导游约定的时间到达上车地点集合，切勿迟到，以免耽误其他游客行程。若因迟到导致无法随车游览，责任自负，敬请谅解。</p>
+			  <p>3.为了不耽误您的行程，请您在国际航班起飞前180分钟到达机场办理登机＆出入境相关手续。</p>
+			  <p>4.如涉及海外国内段行程，请您在航班起飞前90分钟达到机场办理登机手续。</p>
+			  <p>5.注意托运行李、自理行李及随身携带物品的重量合并计入免费行李额中，行李逾重收费标准请遵照各航司的逾重行李收费规定。</p>
+			  <p>6.游泳、漂流、潜水、滑雪、溜冰、戏雪等活动项目，均存在危险。参与前请根据自身条件，并充分参考当地相关部门及其它专业机构的相关公告和建议后量力而行。</p>
+			  <p><h4>预定警告</h4></p>
+			  <p>1、汇定金时请务必将帐号、名称、银行等书写清楚、正确，若有失误，定金到不了帐，则预订作废。</p>
+			  <p>2、定金汇出后，由于我们并不会知道是谁汇的定金，所以务必以电话或传真、电子邮件等方式即时通知我们，以便查帐，若未能及时通知，我们只能以定金未按时汇出为由，自然取消您的预订。</p>
+			  </div>
+		  </div>
+		  <div role="tabpanel" class="tab-pane" id="settings">在您确认预订或付款后直接联系客服人员，告知发票抬头与内容，发票将会按照您提供的地址在您旅行后一个星期之内寄送到，门市预订与现付的旅游者可以直接开发票。</div>
+		  <div role="tabpanel" class="tab-pane" id="tab-1">第一个下拉菜单的内容</div>
+		  <div role="tabpanel" class="tab-pane" id="tab-2">第二个下拉菜单的内容</div>
+		</div>
+		
+		
+		
+		</div>
+		
+		</div>
+		
+
+		
+		
+		
+		
+		
+		
+	</body>
+	<script src="bootstrap-3.4.1-dist/js/jquery-2.1.4.min.js"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+</html>

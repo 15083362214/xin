@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css"/>
+		<style>
+			body{
+				background:linear-gradient(#61C2DF,white);
+				height: 900px;
+			}
+			.left,.right{
+				background-color: rgba(255, 255, 255, 0.3);
+				border-radius: 5px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 left">
+				<h2>注册</h2>
+				<form>
+					<div class="form-group">
+						<label for="name">昵称</label>
+						<input type="text" class="form-control" id="name" placeholder="请输入昵称"/>
+					</div>
+					<div class="form-group">
+						<label for="pass">密码</label>
+						<input type="password" class="form-control" id="pass" placeholder="请输入密码"/>
+					</div>
+					<div class="form-group">
+						<label for="mm">确认密码</label>
+						<input type="password" class="form-control" id="mm" placeholder="请输入重复密码"/>
+					</div>
+					<div class="form-group">
+						<label for="pass">性别</label>
+						<label><input type="radio" name="sex" checked />男</label>
+						<label><input type="radio" name="sex" />女</label>
+					</div>
+					<div class="form-group">
+						<label for="birthday">生日</label>
+						<input type="date" class="form-control" id="birthday" />
+					</div>
+					<div class="form-group">
+						<label for="mm">手机号码</label>
+						<input type="password" class="form-control" id="mm" placeholder="请输入手机号码"/>
+					</div>
+					<div class="form-group">
+						<label for="phone">手机</label>
+						<button class="btn btn-info btn-xs">获取验证码</button>
+						<input type="tel" class="form-control" id="phone" placeholder="请输入手机验证码"/>
+					</div>
+					<div class="form-group text-center">
+						<input type="submit" value="提交" class="btn btn-primary" />
+					</div>
+					</form>
+					</div>
+					
+				<div class="col-md-6 right hidden-md hidden-sm">
+					<form>
+						<h2>已有账户,直接登录</h2>
+						<div class="form-group">
+							<label for="www">账户</label>
+							<input type="text" class="form-control" id="www" placeholder="请输入昵称"/>
+						</div>
+						<div class="form-group">
+							<label for="aaa">密码</label>
+							<input type="password" class="form-control" id="aaa" placeholder="请输入密码"/>
+						</div>
+						<div class="form-group text-center">
+							<input type="submit" value="直接登录" class="btn btn-primary" />
+						</div>
+					</form>
+					</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
